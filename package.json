@@ -1,0 +1,17 @@
+{
+  "name": "remote-jobs-scraper",
+  "version": "1.0.0",
+  "type": "module",
+  "description": "Scrape verified remote developer, AI, marketing, and design jobs with salary ranges, company names, locations, and direct apply links.",
+  "main": "src/main.js",
+  "scripts": {
+    "start": "node src/main.js"
+  },
+  "author": "tuqiiiy",
+  "license": "Apache-2.0",
+  "dependencies": {
+    "apify": "^3.2.6",
+    "crawlee": "^3.12.2",
+    "got-scraping": "^4.0.7"
+  }
+}
