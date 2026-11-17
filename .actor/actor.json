@@ -1,49 +1,64 @@
-{
-  "actorSpecification": 1,
-  "name": "remote-jobs-scraper",
-  "title": "Remote Tech & AI Jobs Scraper (with Salaries)",
-  "description": "Scrape verified remote jobs across software engineering, AI, marketing, and design. Extracts company names, salary ranges, location requirements, tech tags, and direct application links.",
-  "version": "1.0",
-  "meta": {
-    "templateId": "project_empty"
-  },
-  "dockerfile": "./Dockerfile",
-  "categories": [
-    "LEAD_GENERATION",
-    "BUSINESS"
-  ],
-  "storages": {
-    "dataset": {
-      "actorSpecification": 1,
-      "title": "Remote Jobs Dataset",
-      "views": {
-        "overview": {
-          "title": "Overview",
-          "transformation": {
-            "fields": [
-              "position",
-              "company",
-              "salary",
-              "location",
-              "tags",
-              "applyUrl",
-              "publishedAt"
-            ]
-          },
-          "display": {
-            "component": "table",
-            "columns": {
-              "position": { "label": "Position" },
-              "company": { "label": "Company" },
-              "salary": { "label": "Salary Range" },
-              "location": { "label": "Location" },
-              "tags": { "label": "Skills / Tags" },
-              "applyUrl": { "label": "Apply URL" },
-              "publishedAt": { "label": "Date Posted" }
-            }
-          }
-        }
-      }
-    }
-  }
+﻿{
+    "actorSpecification":  1,
+    "name":  "remote-jobs-scraper",
+    "title":  "Remote Tech \u0026 AI Jobs Scraper (with Salaries)",
+    "description":  "Scrape verified remote jobs across software engineering, AI, marketing, and design. Extracts company names, salary ranges, location requirements, tech tags, and direct application links.",
+    "version":  "1.0",
+    "meta":  {
+                 "templateId":  "project_empty"
+             },
+    "dockerfile":  "./Dockerfile",
+    "categories":  [
+                       "LEAD_GENERATION",
+                       "BUSINESS"
+                   ],
+    "storages":  {
+                     "dataset":  {
+                                     "actorSpecification":  1,
+                                     "title":  "Remote Jobs Dataset",
+                                     "views":  {
+                                                   "overview":  {
+                                                                    "title":  "Overview",
+                                                                    "transformation":  {
+                                                                                           "fields":  [
+                                                                                                          "position",
+                                                                                                          "company",
+                                                                                                          "salary",
+                                                                                                          "location",
+                                                                                                          "tags",
+                                                                                                          "applyUrl",
+                                                                                                          "publishedAt"
+                                                                                                      ]
+                                                                                       },
+                                                                    "display":  {
+                                                                                    "component":  "table",
+                                                                                    "columns":  {
+                                                                                                    "position":  {
+                                                                                                                     "label":  "Position"
+                                                                                                                 },
+                                                                                                    "company":  {
+                                                                                                                    "label":  "Company"
+                                                                                                                },
+                                                                                                    "salary":  {
+                                                                                                                   "label":  "Salary Range"
+                                                                                                               },
+                                                                                                    "location":  {
+                                                                                                                     "label":  "Location"
+                                                                                                                 },
+                                                                                                    "tags":  {
+                                                                                                                 "label":  "Skills / Tags"
+                                                                                                             },
+                                                                                                    "applyUrl":  {
+                                                                                                                     "label":  "Apply URL"
+                                                                                                                 },
+                                                                                                    "publishedAt":  {
+                                                                                                                        "label":  "Date Posted"
+                                                                                                                    }
+                                                                                                }
+                                                                                }
+                                                                }
+                                               }
+                                 }
+                 },
+    "output":  "./output_schema.json"
 }
